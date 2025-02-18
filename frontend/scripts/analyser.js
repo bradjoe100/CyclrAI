@@ -9,7 +9,7 @@ async function getItems() {
     set.items = [];
 
     for (let i = 0; i < list.length; i++) {
-        const response = await fetch(`http://localhost:3000/process/${list[i]}`);
+        const response = await fetch(`https://cyclrai.onrender.com/process/${list[i]}`);
         console.log(response);
         const item = await response.json();
         set.items.push(item);

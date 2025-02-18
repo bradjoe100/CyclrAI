@@ -4,7 +4,7 @@ async function getItems(file) {
     const formData = new FormData();
     formData.append("image", file);
     formData.append("type", file.type);
-    const response = await fetch("http://localhost:3000/get-items", {
+    const response = await fetch("https://cyclrai.onrender.com/get-items", {
         method: "POST",
         body: formData
     });
