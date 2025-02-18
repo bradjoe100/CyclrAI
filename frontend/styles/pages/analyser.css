@@ -1,0 +1,155 @@
+:root {
+    --analyser-loading-progress: 0;
+}
+
+.dashboard {
+    margin: 92.5px 50px;
+    
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.item-dashboard {
+    width: 887.5px;
+    height: 837.5px;
+    background-color: #282929;
+
+    border-radius: 20px;
+}
+
+.item-dashboard-top {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.create-button {
+    user-select: none;
+    margin-right: 25px;
+    margin-top: 25px;
+    padding: 10px 16px;
+    background-color:azure;
+    width: 77.5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 15px;
+    font-weight: 550;
+    color:#1d1e1e;
+
+    border-radius: 100px;
+    border: 2px solid #3399ff;
+
+    cursor: pointer;
+
+    transition: all 0.15s ease;
+}
+
+.create-button:hover {
+    background-color: color-mix(in srgb, azure 65%, black);
+}
+
+.create-button:active {
+    transform: scale(0.93);
+    background-color: color-mix(in srgb, azure 75%, black);
+}
+
+.create-button-plus {
+    height: 12.5px;
+}
+
+.item-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 25px;
+
+    column-gap: 12.5px;
+}
+
+.item-column {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.item {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+    border-radius: 10px;
+    border: 1px solid #474848;
+}
+
+.item-image-box {
+    width: 60px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-image {
+    width: 25px;
+}
+
+.item-right {
+    width: 100%;
+    padding-right: 6px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.item-title {
+    padding-top: 4px;
+    font-size: 15px;
+}
+
+.item-text {
+    padding-bottom: 5px;
+    font-size: 10px;
+    
+}
+
+.image-dashboard {
+    height: 837.5px;
+    width: 48.2%;
+    background-color: #4d525d;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 20px;
+}
+
+.image {
+    width: 90%;
+    border-radius: 20px;
+}
+
+.loading-container {
+    width: 78%;
+    height: 12px;
+    margin-top: 60px;
+    margin-left: 25px;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.loading-bar {
+    width: calc(var(--analyser-loading-progress) * 1%);
+    height: 100%;
+    background: linear-gradient(90deg, azure, #3399ff);
+    transition: all 1s linear;
+}

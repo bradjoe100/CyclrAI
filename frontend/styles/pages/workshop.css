@@ -1,0 +1,111 @@
+.dashboard-container {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.dashboard {
+    margin-top: 150px;
+    width: min(1600px, calc(100vw - 60px));
+}
+
+.new-button {
+    user-select: none;
+    display: inline-block;
+    padding: 10px 16px;
+    margin-bottom: 50px;
+    background-color:azure;
+    width: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 15px;
+    font-weight: 550;
+    color:#1d1e1e;
+
+    border-radius: 100px;
+    border: 2px solid #24ba26;
+
+    cursor: pointer;
+
+    transition: all 0.15s ease;
+}
+
+.new-button:hover {
+    background-color: #029602;
+    color: azure;
+}
+
+.new-button:active {
+    transform: scale(0.93);
+    background-color: #24ba26;
+    color: azure;
+}
+.new-button img {
+    transition: all 0.2s ease;
+}
+
+.new-button:hover img  {
+    filter: invert(100%);
+}
+
+.new-button-plus {
+    height: 12.5px;
+}
+
+.file-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    column-gap: 30px;
+    row-gap: 20px;
+}
+
+.file {
+    aspect-ratio: 1 / 1;
+    background-color: #282929;
+    border-radius: 12.5px;
+    color: white;
+
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+
+    transition: all 0.15s ease;
+}
+
+.file:hover {
+    background-color: #5b5b5b;
+}
+
+.file-title {
+    font-size: 13.5px;
+    font-weight: 500;
+    margin-left: 17.5px;
+    margin-top: 21px;
+}
+
+.file-bottom {
+    margin-left: 18.5px;
+}
+
+.items-tag {
+    background-color: #5f5341;
+    padding: 7px 13px;
+    border-radius: 10px;
+    margin-top: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+
+    font-size: 13.5px;
+    font-weight: 500;
+}
+
+.items-tag-icon {
+    height: 18px;
+}

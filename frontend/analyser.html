@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/shared/utility.css">
+    <link rel="stylesheet" href="styles/shared/shared.css">
+    <link rel="stylesheet" href="styles/pages/analyser.css">
+
+    <title>Analyser | CyclrAI</title>
+    <link rel="icon" type="module" href="images/cyclr-logo.png" type="image/x-icon">
+    
+    <!-- Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="utility-header">
+        <!-- This section contains the logo and navigation link for the workshop -->
+        <div class="utility-header-left-section">
+            <img src="images/cyclr-logo.png" class="logo">
+            <a href="workshop.html" class="navigation-link">Workshop</a>
+        </div>
+        <div class="utility-header-right-section">
+            <a href="generate.html" class="plus-button">
+                <img src="images/plus.png" class="plus-button-plus">
+            </a>
+            <div class="streak-icon">
+                <img src="images/flame.png" class="streak-icon-image">
+                <div class="streak-icon-text">0</div>
+            </div>
+            <div class="exp-icon">
+                <img src="images/bolt.png" class="exp-icon-image">
+                <div class="exp-icon-text">0</div>
+            </div>
+        </div>
+    </div>
+    <div class="dashboard">
+        <div class="item-dashboard">
+            <div class="item-dashboard-top">
+                <div class="loading-container">
+                    <div class="loading-bar"></div>
+                </div>
+                <a href="workshop.html" class="link create-button">
+                    <img src="images/plus.png" class="create-button-plus">
+                    <div class="create-button-text">Create</div>
+                </a>
+            </div>
+            <div class="item-grid">
+                
+            </div>
+        </div>
+        <div class="image-dashboard">
+            <img src="images/recycling-symbol.png" class="image">
+        </div>
+    </div>
+    <script type="module" src="scripts/analyser.js" ></script>
+    <script type="module" src="scripts/utility.js" ></script>
+</body>
+</html>

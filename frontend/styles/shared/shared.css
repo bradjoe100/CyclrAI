@@ -1,0 +1,10 @@
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    border: 0;
+}
