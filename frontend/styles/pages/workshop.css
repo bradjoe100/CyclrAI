@@ -72,6 +72,7 @@
     align-items: start;
     justify-content: start;
     flex-direction: column;
+    user-select: none;
 
     transition: all 0.15s ease;
 }

@@ -19,6 +19,8 @@ body {
     left: 0;
     right: 0;
     height: 62.5px;
+    
+    z-index: 1000;
 }
 
 .utility-header-left-section {
@@ -55,7 +57,7 @@ body {
     align-items: center;
     justify-content: space-between;
     
-    width: 200px;
+    width: 120px;
 }
 
 .plus-button {
@@ -103,7 +105,7 @@ body {
     height: 12.5px;
 }
 
-.streak-icon {
+/*.streak-icon {
     user-select: none;
     display: inline-block;
     height: 35px;
@@ -114,6 +116,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 
     font-size: 15px;
     font-weight: 550;
@@ -134,11 +137,12 @@ body {
     height: 20px;
     margin-right: 11px;
 }
+
 .streak-icon-text {
     color: #fe9923;
     font-size: 1.05rem;
     font-weight: 525;
-}
+}*/
 
 .exp-icon {
     user-select: none;
@@ -170,6 +174,7 @@ body {
     height: 20px;
     margin-right: 11px;
 }
+
 .exp-icon-text {
     color: #3399ff;
     font-size: 1.05rem;

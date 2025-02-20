@@ -26,10 +26,10 @@
             <a href="generate.html" class="plus-button">
                 <img src="images/plus.png" class="plus-button-plus">
             </a>
-            <div class="streak-icon">
+            <!-- <div class="streak-icon">
                 <img src="images/flame.png" class="streak-icon-image">
                 <div class="streak-icon-text">0</div>
-            </div>
+            </div> -->
             <div class="exp-icon">
                 <img src="images/bolt.png" class="exp-icon-image">
                 <div class="exp-icon-text">0</div>
@@ -38,19 +38,20 @@
     </div>
     <div class="dashboard-container">
         <div class="dashboard">
-            <div class="upload-box">
+            <label for="uploadFileDrop" class="upload-box">
                 <div class="upload-icon">
                     <img src="images/upload.png" class="upload-icon-image">
                 </div>
                 <div class="upload-text">
-                    Drag & drop a .png file to upload
+                    Drag & drop an image file to upload
                 </div>
                 <label for="uploadFileInput" class="upload-button">
                     <div class="upload-button-star"></div>
                     <div class="upload-button-text">Upload File</div>
                 </label>
                 <input type="file" id="uploadFileInput" class="file-input">
-            </div>
+            </label>
+            <input type="file" id="uploadFileDrop" class="file-input">
         </div>
     </div>
     <script type="module" src="scripts/generate.js" ></script>

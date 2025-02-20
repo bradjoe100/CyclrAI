@@ -2,18 +2,14 @@ import { idList, loadSetFromStorage } from './data/sets.js';
 
 function loadItems() {
     let itemsHTML = '';
-    console.log(idList);
     for (let id of idList) {
-        console.log(id);
         const set = loadSetFromStorage(id);
-        console.log(id);
-        console.log(set);
-        const { items } = set;
-        if (items)
+        const { items, isComplete } = set;
+        if (isComplete)
             itemsHTML +=
             `
                 <a href="checklist.html?id=${id}" class="file link">
-                    <div class="file-title">Recycling List</div>
+                    <div class="file-title">${set.title || 'Unnamed List'}</div>
                     <div class="file-bottom">
                         <div class="items-tag">
                             <img src="images/item.png" class="items-tag-icon">
@@ -26,7 +22,7 @@ function loadItems() {
             itemsHTML +=
             `
                 <a href="analyser.html?id=${id}" class="file link">
-                    <div class="file-title">Unfinished Recycling List</div>
+                    <div class="file-title">(Draft)</div>
                     <div class="file-bottom">
                     </div>
                 </a>

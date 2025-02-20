@@ -108,3 +108,55 @@ body {
     margin-left: 6%;
     font-size: 1rem;
 }
+
+.loading-text-big {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.loading-text-small {
+    margin-top: 1%;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.loading-spinner {
+    position: relative;
+    margin-top: 75px;
+    width: 60px;
+    height: 60px;
+    animation: loading 2s linear infinite;
+}
+
+.bubble-one,
+.bubble-two {
+    position: absolute;
+    top: 0;
+    width: 33.3px;
+    height: 33.3px;
+    border-radius: 100%;
+    background-color: azure;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+.bubble-two {
+    top: auto;
+    bottom: 0;
+    animation-delay: -1s;
+}
+
+@keyframes loading {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bounce {
+    0%,
+    100% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1);
+    }
+}

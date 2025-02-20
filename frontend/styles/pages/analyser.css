@@ -2,18 +2,26 @@
     --analyser-loading-progress: 0;
 }
 
+.dashboard-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .dashboard {
-    margin: 92.5px 50px;
+    margin-top: 92.5px;
+    width: min(calc(100vw - 40px), 1778px);
     
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
 }
 
 .item-dashboard {
-    width: 887.5px;
+    width: 49.25%;
     height: 837.5px;
     background-color: #282929;
+
+    overflow: auto;
 
     border-radius: 20px;
 }
@@ -22,6 +30,28 @@
     margin-bottom: 40px;
     display: flex;
     justify-content: space-between;
+}
+
+.deactivated-create-button {
+    user-select: none;
+    margin-right: 25px;
+    margin-top: 25px;
+    padding: 10px 16px;
+    background-color: color-mix(in srgb, azure 65%, black);
+    width: 77.5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 15px;
+    font-weight: 550;
+    color: color-mix(in srgb, #1d1e1e 55%, black);
+
+    border-radius: 100px;
+    border: 2px solid color-mix(in srgb, #3399ff 65%, black);
+
+    transition: all 0.15s ease;
 }
 
 .create-button {
@@ -61,9 +91,34 @@
     height: 12.5px;
 }
 
+.title-textbox {
+    font-family: Poppins, sans-serif;
+    margin-left: 25px;
+    margin-right: 25px;
+    width: calc(100% - 100px);
+    height: 40px;
+    background-color: #1d1e1e;
+    font-size: 16px;
+    font-weight: 425;
+
+    padding-left: 25px;
+    padding-right: 25px;
+
+    caret-color: azure;
+    color: azure;
+    outline: none;
+
+    border-radius: 100px;
+    border: none;
+}
+
+.title-textbox::placeholder {
+    color: #757575;
+}
+
 .item-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     padding: 25px;
 
     column-gap: 12.5px;
@@ -121,27 +176,32 @@
 
 .image-dashboard {
     height: 837.5px;
-    width: 48.2%;
+    width: 49.25%;
     background-color: #4d525d;
     
     display: flex;
-    align-items: center;
     justify-content: center;
+    overflow: auto;
     
     border-radius: 20px;
 }
 
 .image {
     width: 90%;
+    margin-top: 5%;
     border-radius: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    user-select: none;
 }
 
 .loading-container {
-    width: 78%;
+    flex: 1;
     height: 12px;
     margin-top: 60px;
     margin-left: 25px;
-    background-color: #ddd;
+    margin-right: 24px;
+    background-color: azure;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
@@ -152,4 +212,17 @@
     height: 100%;
     background: linear-gradient(90deg, azure, #3399ff);
     transition: all 1s linear;
+}
+
+@media (max-width: 950px) {
+    .dashboard {
+        flex-direction: column;
+    }
+    .item-dashboard {
+        width: auto;
+    }
+    .image-dashboard {
+        width: auto;
+        margin-top: 20px;
+    }
 }

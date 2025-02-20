@@ -29,6 +29,7 @@ function renderItems() {
     }
     document.querySelector('.item-grid').innerHTML = itemsHTML;
     document.querySelector('.image').src = image;
+    document.querySelector('.set-title').innerHTML = set.title || '';
     for (let i = 0; i < items.length; i++) {
         document.getElementById(`item-button-${i}`).addEventListener("click", () => {deleteIndexFromSet(id, i); incrementExp(); renderItems()});
     }
